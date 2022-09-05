@@ -1,0 +1,13 @@
+#conteudo {
+    border: .6em solid #2d1b94;
+    padding: 1em ;
+    margin: auto 20px;
+    width: 400px;
+    height: 200px;
+}
+
+#conteudo p {
+    margin: auto 50%;
+    font-size: 3rem;
+    text-decoration: double;
+}
