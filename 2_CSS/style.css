@@ -1,13 +1,15 @@
-#conteudo {
-    border: .6em solid #2d1b94;
-    padding: 1em ;
-    margin: auto 20px;
-    width: 400px;
-    height: 200px;
+body { 
+    font-size: 22px;
 }
 
-#conteudo p {
-    margin: auto 50%;
-    font-size: 3rem;
-    text-decoration: double;
+p {
+    color:#007c7c ;
+}
+
+.gray {
+    background-color: rgb(1, 13, 117);
+}
+
+#second {
+    font-weight: bold;
 }
