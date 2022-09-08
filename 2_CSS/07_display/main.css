@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: sans-serif
+}
+
+li {
+    margin-inline: .5rem;
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+li:hover {
+    font-weight: bold;
+}
+
+ul {
+    text-align: right;
+}
+
+nav {
+    background-color: #000;
+}
