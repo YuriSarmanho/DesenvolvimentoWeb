@@ -1,0 +1,25 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 10%;
+    font-size: 1.5rem;
+}
+
+a {
+    color: hsl(228, 67%, 26%);
+}
+/* 
+a:visited {
+    color: rgb(165, 42, 151);
+} */
+
+a:hover, a:hover{
+    color: #16476f;
+    background-color: #1c436389;
+}
+
+a:active {
+    color: #2b168a;
+}
