@@ -1,0 +1,16 @@
+body { 
+    font-size: 22px;
+}
+
+p {
+    color:#007c7c ;
+}
+
+.gray {
+    background-color: rgb(1, 13, 117);
+}
+
+#second {
+    font-weight: bold;
+    
+}

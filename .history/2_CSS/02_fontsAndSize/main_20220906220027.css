@@ -1,0 +1,15 @@
+ p {
+    font-size: 20px;/*absolute size*/
+ }
+
+ h1 {
+    border: 2px dashed red;
+    width: 50%;/*the size will change depend on the parent components*/
+ }
+
+ #first{
+    font-size: 1.5rem;/*The size of the component will change depending on the root component, by default the size of the root is set by the browse*/
+ }
+ #second {
+    font-size: 1.5em;
+ }

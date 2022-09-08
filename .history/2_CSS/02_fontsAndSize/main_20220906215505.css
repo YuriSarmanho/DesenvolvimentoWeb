@@ -1,0 +1,12 @@
+ p {
+    font-size: 20px;/*absolute size*/
+ }
+
+ h1 {
+    border: 2px dashed red;
+    width: 50%;/*the size will change depend on the parent components*/
+ }
+
+ p {
+    font-size: 1.5rem;/*The size of the component will change depend
+ }
