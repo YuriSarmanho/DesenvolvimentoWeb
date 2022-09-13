@@ -1,0 +1,51 @@
+* {
+  --BGCOLOR: #ccffe0;
+  --GREENDEFAULT: #5cff9d;
+  --DARKGREEN: #3e9a63;
+  --DARKGREENHOVER: #1d4f31;
+  --HOVERDEFAULT: #46c278;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--BGCOLOR);
+}
+
+.result-container {
+  background-color: var(--GREENDEFAULT);
+  height: 80vh;
+  width: 40%;
+  margin: 10vh 30%;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play-btn {
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--DARKGREEN);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.play-btn:hover {
+    background-color: var(--DARKGREENHOVER);
+  }
