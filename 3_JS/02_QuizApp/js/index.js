@@ -80,6 +80,14 @@ const db_questions = [
     ],
   },
 ];
+let currentQuestion = 0
+
+function setQuestion(currentQuestion) {
+  // console.log(currentQuestion);
+  document.getElementById("question").innerText =
+    db_questions[currentQuestion].question;
+  setAnswers(currentQuestion);
+}
 
 function setAnswers(currentQuestion) {
   for (let count = 0; count < 4; count++) {
@@ -88,18 +96,19 @@ function setAnswers(currentQuestion) {
   }
 }
 
-function setQuestion(currentQuestion) {
-  document.getElementById("question").innerText =
-    db_questions[currentQuestion].question;
-  setAnswers(currentQuestion);
-}
-
 function isRigthAnswer(questionId, answerId) {
   answerSelected = db_questions[questionId].answer_options[answerId].isRigth;
   if (answerSelected) {
     return console.log("Acertou miséra");
+  } else {
+    console.log("Errou miséra");
   }
-  console.log("Errou miséra");
+  changeQuestion()
 }
 
-setQuestion(0);
+function changeQuestion() {
+  currentQuestion = currentQuestion + 1
+  setQuestion(currentQuestion);
+}
+
+setQuestion(currentQuestion);
