@@ -22,11 +22,13 @@ const db_questions = [
         id: 4,
         answer: "if()",
         isRigth: false,
-      }
-    ]
-  },{
+      },
+    ],
+  },
+  {
     id: 2,
-    question: "Que tipo de tag HTML é usada para colocar as principais informações do site?",
+    question:
+      "Que tipo de tag HTML é usada para colocar as principais informações do site?",
     answer_options: [
       {
         id: 1,
@@ -47,11 +49,13 @@ const db_questions = [
         id: 4,
         answer: "<body>",
         isRigth: true,
-      }
-    ]
-  },{
+      },
+    ],
+  },
+  {
     id: 3,
-    question: "Qual das linguagem a baixo é utilizada para estilizar as páginas?",
+    question:
+      "Qual das linguagem a baixo é utilizada para estilizar as páginas?",
     answer_options: [
       {
         id: 1,
@@ -72,30 +76,27 @@ const db_questions = [
         id: 4,
         answer: "PHP",
         isRigth: false,
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
+const quest = db_questions[0].question;
 
-const quest = db_questions[2].question
-const resp1 = db_questions[2].answer_options[0].answer
-const resp2 = db_questions[2].answer_options[1].answer
-const resp3= db_questions[2].answer_options[2].answer
-const resp4 = db_questions[2].answer_options[3].answer
+document.getElementById("question").innerText = quest;
 
-document.getElementById("question").innerText = quest
-document.getElementById("option1").innerText = resp1
-document.getElementById("option2").innerText = resp2
-document.getElementById("option3").innerText = resp3
-document.getElementById("option4").innerText = resp4
-
-
+function setAnswers() {
+  for(let count = 0; count<4;count++){
+    document.getElementById(count).innerText = db_questions[0].answer_options[count].answer;
+  }
+}
 
 function isRigthAnswer(questionId, answerId) {
-  answerSelected = db_questions[questionId].answer_options[answerId].isRigth
-  if(answerSelected){
-    return console.log("Acertou miséra")
+  answerSelected = db_questions[questionId].answer_options[answerId].isRigth;
+  if (answerSelected) {
+    return console.log("Acertou miséra");
   }
-  console.log("Errou miséra")
+  console.log("Errou miséra");
 }
+
+setAnswers()
