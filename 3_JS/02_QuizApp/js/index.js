@@ -81,14 +81,17 @@ const db_questions = [
   },
 ];
 
-const quest = db_questions[0].question;
-
-document.getElementById("question").innerText = quest;
-
-function setAnswers() {
-  for(let count = 0; count<4;count++){
-    document.getElementById(count).innerText = db_questions[0].answer_options[count].answer;
+function setAnswers(currentQuestion) {
+  for (let count = 0; count < 4; count++) {
+    document.getElementById(count).innerText =
+      db_questions[currentQuestion].answer_options[count].answer;
   }
+}
+
+function setQuestion(currentQuestion) {
+  document.getElementById("question").innerText =
+    db_questions[currentQuestion].question;
+  setAnswers(currentQuestion);
 }
 
 function isRigthAnswer(questionId, answerId) {
@@ -99,4 +102,4 @@ function isRigthAnswer(questionId, answerId) {
   console.log("Errou miséra");
 }
 
-setAnswers()
+setQuestion(0);
