@@ -81,6 +81,8 @@ const db_questions = [
   },
 ];
 let currentQuestion = 0;
+let hits = 0
+let mistakes = 0
 
 function setQuestion(currentQuestion) {
   // console.log(currentQuestion);
@@ -96,16 +98,23 @@ function setAnswers(currentQuestion) {
   }
 }
 
-function isRigthAnswer(questionId, answerId) {
+function checkAnswer(questionId, answerId) {
   changeToResult();
-  answerSelected = db_questions[questionId].answer_options[answerId].isRigth;
-  if (answerSelected) {
-    return console.log("Acertou miséra");
-  } else {
-    console.log("Errou miséra");
-  }
-  changeQuestion();
+  let isRigthAnswer = db_questions[questionId].answer_options[answerId].isRigth;
+  if (isRigthAnswer) {
+      changeScore()
+  } 
+    changeScore(false)
+    changeQuestion();
 }
+
+function changeScore(isRigth = true) {
+  if(isRigth) {
+    return hits++
+  }
+  return mistakes++
+}
+
 
 function changeQuestion() {
   currentQuestion = currentQuestion + 1;
