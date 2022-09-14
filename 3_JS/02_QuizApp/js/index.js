@@ -125,4 +125,9 @@ function changeToResult() {
     window.location = "result.html";
   }
 }
+
+function changeToGame() {
+    window.location = "index.html";
+}
+
 setQuestion(currentQuestion);
