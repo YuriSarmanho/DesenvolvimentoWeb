@@ -30,6 +30,9 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .options-container {
@@ -52,4 +55,8 @@ body {
 
 .options-btn:hover {
   background-color: var(--HOVERDEFAULT);
+}
+
+.options-btn:active {
+  background-color: #195230;
 }

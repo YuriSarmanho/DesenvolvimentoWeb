@@ -27,4 +27,15 @@ const db_questions = [
   }
 ];
 
-console.log(db_questions);
+
+const quest = db_questions[0].question
+const resp1 = db_questions[0].answer_options[0].answer
+const resp2 = db_questions[0].answer_options[1].answer
+const resp3= db_questions[0].answer_options[2].answer
+const resp4 = db_questions[0].answer_options[3].answer
+
+document.getElementById("question").innerText = quest
+document.getElementById("option1").innerText = resp1
+document.getElementById("option2").innerText = resp2
+document.getElementById("option3").innerText = resp3
+document.getElementById("option4").innerText = resp4
