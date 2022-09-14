@@ -80,7 +80,7 @@ const db_questions = [
     ],
   },
 ];
-let currentQuestion = 0
+let currentQuestion = 0;
 
 function setQuestion(currentQuestion) {
   // console.log(currentQuestion);
@@ -97,18 +97,32 @@ function setAnswers(currentQuestion) {
 }
 
 function isRigthAnswer(questionId, answerId) {
+  changeToResult();
   answerSelected = db_questions[questionId].answer_options[answerId].isRigth;
   if (answerSelected) {
     return console.log("Acertou miséra");
   } else {
     console.log("Errou miséra");
   }
-  changeQuestion()
+  changeQuestion();
 }
 
 function changeQuestion() {
-  currentQuestion = currentQuestion + 1
+  currentQuestion = currentQuestion + 1;
   setQuestion(currentQuestion);
 }
 
+function isQuestionsEnded() {
+  const totalQuestions = db_questions.length;
+
+  if (currentQuestion == totalQuestions - 1) {
+    return true;
+  }
+}
+
+function changeToResult() {
+  if (isQuestionsEnded()) {
+    window.location = "result.html";
+  }
+}
 setQuestion(currentQuestion);
