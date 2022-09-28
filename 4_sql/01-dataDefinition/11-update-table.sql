@@ -1,0 +1,8 @@
+-- ALTER TABLE employers
+-- ALTER COLUMN yearly_revenue SET DATA TYPE FLOAT(5,2) --MySQL
+
+ALTER TABLE employers
+ALTER COLUMN yearly_revenue SET DATA TYPE FLOAT;--Postgresql
+
+ALTER TABLE users
+ALTER COLUMN full_name SET DATA TYPE VARCHAR(300);
