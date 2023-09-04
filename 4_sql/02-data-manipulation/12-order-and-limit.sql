@@ -1,0 +1,4 @@
+SELECT * FROM sales
+WHERE is_disputed IS TRUE
+ORDER BY volume DESC
+LIMIT 10;

@@ -1,3 +1,0 @@
---UPDATE <table name>
---SET <column name> = <new value>, ...
---WHERE <condition>;

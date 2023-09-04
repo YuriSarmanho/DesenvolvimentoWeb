@@ -1,0 +1,1 @@
+SELECT customer_name, product_name FROM sales;
