@@ -20,7 +20,7 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "postgres1",
-            "database": "relations",
+            "database": "restaurants",
             "username": "postgres"
         }
     ]
