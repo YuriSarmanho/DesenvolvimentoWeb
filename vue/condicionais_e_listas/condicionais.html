@@ -1,0 +1,16 @@
+<div id="app">
+    <p>Usuario Logado {{ nome }}</p>
+    <p>Nenhum usuario logado</p>
+    <button @click="logado = !logado"> {{ logado ? 'Sair' : 'Entrar' }} </button>
+</div>
+
+
+<script>
+    new Vue ({
+        el: "#app",
+        data: {
+            nome: 'Maria',
+            logado: false
+        }
+    })
+</script>

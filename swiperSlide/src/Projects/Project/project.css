@@ -1,0 +1,45 @@
+* {
+    --PRIMARY-BG: #070B15;
+    --SECONDARY-BG: #0d0d1f;
+    --PRIMARY-COLOR: #009381;
+    --PRIMARY-COLOR-DARK: #00896e;
+    --PRIMARY-COLOR-HOVER: #00d49b;
+    --SECONDARY-COLOR: #cafffb;
+    --FOOTER-BGCOLOR: #005c54;
+}
+
+.project-container {
+    background-color: var(--SECONDARY-BG);
+    width: 250px;
+    height: 550px;
+    border-radius: 1em;
+}
+
+.project-img-container {
+    background-image: url("../../img/projectImgDefault.png");
+    height: 300px;
+    width: 250px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.project-info {
+    font-family: "Share Tech Mono";
+    padding: 1rem;
+}
+
+.project-info h3 {
+    color: var(--PRIMARY-COLOR);
+    font-size: 1.3rem;
+}
+
+.project-description {
+    text-align: justify;
+    color: var(--SECONDARY-COLOR);
+    font-size: 1rem;
+}
+
+.project-container:hover {
+    transform: scale(.99);
+    cursor: pointer;
+    transition: ease .2s;
+}
