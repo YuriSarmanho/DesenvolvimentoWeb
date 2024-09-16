@@ -1,0 +1,31 @@
+.todo-tesk-container {
+  width: 15rem;
+  height: 15rem;
+  background-color: #608081;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-tesk-title {
+  font-size: 2rem;
+}
+.todo-tesk-close-icon { 
+  width: 1.2rem;
+  left: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+.todo-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.todo-tesk-close-icon:hover{
+  transform: scale(1.1);
+}
+.todo-tesk-close-icon:active{
+  transform: scale(1);
+}

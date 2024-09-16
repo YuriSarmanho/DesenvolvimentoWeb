@@ -2,9 +2,12 @@ import '@/css/todoTesk.css'
 
 export default {
     name: 'todoTesk',
+    props: {
+        teskTitle: String
+    },
     data() {
         return {
-            teskTitle: 'Titulo Tesk'
+            isTeskFinished: false,
         }
-    }
+    },
 }

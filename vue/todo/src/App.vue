@@ -2,15 +2,17 @@
 	<div id="app">
 		<todoProgressBar/>
 		<todoInputTesk/>
+		<todoTeskList/>
 	</div>
 </template>
 
 <script>
 import todoProgressBar from './components/progressBar/todoProgressBar.vue';
 import todoInputTesk from './components/inputTesk/todoInputTesk.vue'
+import todoTeskList from './components/teskContainer/todoTeskList.vue';
 
 export default {
-	components: {todoProgressBar, todoInputTesk}
+	components: {todoProgressBar, todoInputTesk, todoTeskList}
 }
 </script>
 
