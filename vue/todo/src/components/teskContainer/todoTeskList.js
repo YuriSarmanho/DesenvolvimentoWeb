@@ -11,7 +11,7 @@ export default {
     },
     components: { todoTesk },
     created() { 
-        barramento.$on('newTeskTitle', (newTeskTitle) => {
+        barramento.$on('addNewTesk', (newTeskTitle) => {
             this.tesks = [...this.tesks, newTeskTitle]
         })
     }

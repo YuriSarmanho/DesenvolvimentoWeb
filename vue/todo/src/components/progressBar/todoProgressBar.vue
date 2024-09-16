@@ -3,8 +3,8 @@
 <template>
   <div class="todo-progress-bar-container">
     <div class="todo-progress-bar">
-      <div class="todo-progress-fill" :style="{ width: teskFinished + '%' }">
-        <p>{{ teskFinished }} %</p>
+      <div class="todo-progress-fill" :style="{ width: teskBarFill + '%' }">
+        <p>{{ teskBarFill }} %</p>
       </div>
     </div>
   </div>

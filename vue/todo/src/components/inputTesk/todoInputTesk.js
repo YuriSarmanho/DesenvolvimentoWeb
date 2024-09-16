@@ -9,8 +9,9 @@ export default {
     };
   },
   methods: {
-    setTeskTitle() {
-      barramento.$emit('newTeskTitle', this.teskTitle)
+    addNewTesk() {
+      barramento.$emit('addNewTesk', this.teskTitle)
+      barramento.$emit('addTesk')
       this.teskTitle = ''
     }
   }
